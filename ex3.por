@@ -1,29 +1,26 @@
-programa
-{
-	
-	funcao inicio()
-	{
+programa {
+  funcao inicio() {
 
-	cadeia nome
-	inteiro idade
+    inteiro n1, n2, n3
 
-	escreva("Qual o seu nome? ")
-	leia(nome)
+    escreva("Informe o primeiro número: ")
+    leia(n1)
 
-	escreva("Qual a sua idade? ")
-	leia(idade)
+    escreva("Informe o segundo número: ")
+    leia(n2)
 
-	escreva("Olá, ", nome, " sua idade é ", idade)
-	}
+    escreva("Informe o terceiro número: ")
+    leia(n3)
+
+    se (n1 > n2 e n1 > n3){
+      escreva("O primeiro número é maior, sendo ele: ", n1)
+    } 
+    senao se (n2 > n1 e n2 > n3){
+      escreva("O segundo número é maior, sendo ele: ", n2)
+    }
+    senao{
+      escreva("O terceiro número é maior, sendo ele: ", n3)
+
+    }
+  }
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 203; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
